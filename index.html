@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embark On Your Life Journey</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body class="tracking-wider text-white bg-color-primary">
+    <!--Navbar-->
+    <header class="mx-5">
+        <nav class="container flex items-center justify-between border border-white ">
+            <div class="py-5 text-3xl font-bold text-color-secondary">
+                <a>
+                    <span class="text-white">Pen</span>Yourself
+                </a>
+            </div>
+            <div>
+                <ul class="items-center hidden space-x-6 lg:flex">
+                    <li><a href="#home" class="duration-200 hover:text-color-secondary ease">Home</a></li>
+                    <li><a href="#features" class="duration-200 hover:text-color-secondary ease">Features</a></li>
+                    <li><a href="#testimonial" class="duration-200 hover:text-color-secondary ease">Testimonial</a></li>
+                    <li><a href="#pricing" class="duration-200 hover:text-color-secondary ease">Pricing</a></li>
+                    <li><a href="#blog" class="duration-200 hover:text-color-secondary ease">Blog</a></li>
+                    <li><a href="#contact" class="duration-200 hover:text-color-secondary ease">Contact</a></li>
+
+                    <li><button class="py-3 font-bold uppercase ease-in rounded-md bg-color-secondary px-9 hover:opacity-80">Free trial</button></li>
+                </ul>
+            </div>
+
+            <!--Mobile Screen-->
+            <div id="hamburger" class="z-50 pl-10 cursor-pointer lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="menu" class="hidden bg-color-primary-dark h-[50vh] absolute inset-0">
+                <ul class="grid h-full py-10 place-items-center">
+                        <li><a id="hLink" href="#home" class="duration-200 hover:text-color-secondary ease">Home</a></li>
+                        <li><a id="hLink" href="#features" class="duration-200 hover:text-color-secondary ease">Features</a></li>
+                        <li><a id="hLink" href="#testimonial" class="duration-200 hover:text-color-secondary ease">Testimonial</a></li>
+                        <li><a id="hLink" href="#pricing" class="duration-200 hover:text-color-secondary ease">Pricing</a></li>
+                        <li><a id="hLink" href="#blog" class="duration-200 hover:text-color-secondary ease">Blog</a></li>
+                        <li><a id="hLink" href="#contact" class="duration-200 hover:text-color-secondary ease">Contact</a></li>
+    
+                        <li><button class="btn">Free Trial</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Hero-->
+        <section id="home" class="relative mx-5">
+            <div class="absolute top-0 overflow-hidden rounded-full w-60 h-60 bg-color-blob -left-5 -z-10 blur-2xl opacity-30"></div>
+            <div class="absolute right-0 overflow-hidden rounded-full bottom-10 w-60 h-60 bg-color-secondary -z-10 blur-2xl opacity-30"></div>
+            
+            <div class="container py-20 border border-white">
+                <div class="z-20 flex flex-col items-center md:flex-row">
+                    <div class="mb-20 text-center md:text-left md:w-1/2 md:pr-10 ">
+                        <h1 class="mb-10 tittle">Awesome App For Your online journal</h1>
+                        <p class="max-w-lg mb-10 text-justify leading-relax">Explore a variety of journaling tools in Journey's editor. Change the paragraph style, stylize your text with bold,
+                        italics and strikethrough, organize your writing with bullets, tables, and checklists, and play around with text color.
+                        </p>
+                        <button class="btn">Download App</button>
+                    </div>
+
+                    <div class="items-center md:w-1/2">
+                        <img  src="/image/hero-1-01.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--feature-->
+        <section id="features" class="bg-color-primary-light">
+            <div class="container py-20">
+                <div class="m-auto mb-20 text-center md:w-1/2">
+                    <h4 class="mb-4 font-bold uppercase text-color-secondary">Our Features</h4>
+                    <h1 class="tittle">Create Stunning Journal Entries</h1>
+                </div>
+
+                <div class="grid gap-12 px-4 mx-5 lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 sm:px-6 lg:px-8 lg:gap-8">
+
+                    <!--card 1-->
+                    <div class="px-5 py-10 text-center duration-200 ease-in border-2 border-solid cursor-pointer border-color-gray rounded-2xl hover:bg-color-primary-dark">
+                        <div class="inline-block w-20 h-20 px-6 py-5 rounded-2xl bg-color-secondary">
+                            <i class="text-4xl fa-solid fa-indent"></i>
+                        </div>
+                        <h4 class="py-4 text-xl font-bold">Paragraph Style</h4>
+                        <p class="leading-relaxed">Stylize your writing using titles, bold, underline, and strikethrough, and adding block quotes and so on.</p>
+                    </div>
+
+                    <!--card 2-->
+                    <div class="px-5 py-10 text-center duration-200 ease-in border-2 border-solid cursor-pointer border-color-gray rounded-2xl hover:bg-color-primary-dark">
+                        <div class="inline-block w-20 h-20 px-6 py-5 rounded-2xl bg-color-secondary">
+                            <i class="text-4xl fa-solid fa-fill"></i>
+                        </div>
+                        <h4 class="py-4 text-xl font-bold">Color</h4>
+                        <p class="leading-relaxed">Explore different color options for your background and text to customize your journal interface to your liking.</p>
+                    </div>
+
+                    <!--card 3-->
+                    <div class="px-5 py-10 text-center duration-200 ease-in border-2 border-solid cursor-pointer border-color-gray rounded-2xl hover:bg-color-primary-dark">
+                        <div class="inline-block w-20 h-20 px-6 py-5 rounded-2xl bg-color-secondary">
+                            <i class="text-4xl fa-solid fa-table-list"></i>
+                        </div>
+                        <h4 class="py-4 text-xl font-bold">Tables</h4>
+                        <p class="leading-relaxed">Add tables in your journals to organize your thoughts and address your different needs.</p>
+                    </div>
+
+                    <!--card 4-->
+                    <div class="px-5 py-10 text-center duration-200 ease-in border-2 border-solid cursor-pointer border-color-gray rounded-2xl hover:bg-color-primary-dark">
+                        <div class="inline-block w-20 h-20 px-6 py-5 rounded-2xl bg-color-secondary">
+                            <i class="text-4xl fa-solid fa-list"></i>
+                        </div>
+                        <h4 class="py-4 text-xl font-bold">Bullets</h4>
+                        <p class="leading-relaxed">Use either numbered or unnumbered bullets to organize your writing.</p>
+                    </div>
+
+                    <!--card 5-->
+                    <div class="px-5 py-10 text-center duration-200 ease-in border-2 border-solid cursor-pointer border-color-gray rounded-2xl hover:bg-color-primary-dark">
+                        <div class="inline-block w-20 h-20 px-6 py-5 rounded-2xl bg-color-secondary">
+                            <i class="text-4xl fa-solid fa-list-check"></i>
+                        </div>
+                        <h4 class="py-4 text-xl font-bold">Checklists</h4>
+                        <p class="leading-relaxed">Add checklists to get your daily, weekly, or monthly affairs in order.</p>
+                    </div>
+
+                    <!--card 6-->
+                    <div class="px-5 py-10 text-center duration-200 ease-in border-2 border-solid cursor-pointer border-color-gray rounded-2xl hover:bg-color-primary-dark">
+                        <div class="inline-block w-20 h-20 py-5 px-auto rounded-2xl bg-color-secondary">
+                            <i class="text-4xl fa-solid fa-link"></i>
+                        </div>
+                        <h4 class="py-4 text-xl font-bold">Add Links</h4>
+                        <p class="leading-relaxed">Include links to external sources in your journals to be able to reference them anytime, anywhere.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--pricing-->
+        <section id="saving-money" class="container relative py-20">
+            <div class="absolute top-0 overflow-hidden rounded-full w-80 h-80 bg-color-secondary -left-1 -z-10 blur-2xl opacity-30"></div>
+            <div class="absolute overflow-hidden rounded-full right-10 bottom-10 bg-color-blob w-60 h-60 -z-10 blur-2xl opacity-30"></div>
+            
+
+            <div class="flex flex-col items-center justify-between md:flex-row">
+                <div class="items-center mb-12 md:w-1/2">
+                    <img  src="/image/hero-2-01.png">
+                </div>
+                <div class="text-center md:text-left md:w-1/2 md:ml-20 ">
+                    <h4 class="mb-4 font-bold uppercase text-color-secondary">Rp 40.000/monthly, which offers a 3-day free trial</h4>
+                    <h1 class="mb-4 tittle">Best App with Best Price</h1>
+                    <p class="max-w-lg mb-10 leading-relaxed text-justify">Many of Grid Diary’s features are free to use, we also offer advanced features, including sync between all your devices, passcode lock and more color themes. All this, and future member-only features, can be unlocked with a single in-app subscription that covers all your devices.</p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works bg-color-primary-light">
+            <div class="container py-20" >
+                <div class="m-auto mb-20 text-center md:w-1/2">
+                    <h4 class="mb-4 font-bold uppercase text-color-secondary">How It Works</h4>
+                    <h1 class="tittle">The simplest way to get started with keeping a diary</h1>
+                </div>
+
+                <div class="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+                    <!--card 1-->
+                    <div class="max-w-sm text-center cursor-pointer">
+                        <div class="relative inline-block px-6 py-3 duration-200 ease-in rounded-lg cursor-pointer bg-color-primary-dark hover:bg-color-secondary">
+                            <p class="text-6xl">1</p>
+                        </div>
+
+                        <h4 class="py-4 text-xl font-bold">Install The App</h4>
+                        <p class="leading-relaxed">Help you focus on the areas of life you want to track and flourish in every way.</p>
+                    
+                    </div>
+
+                    <!--card 2-->
+                    <div class="max-w-sm text-center cursor-pointer">
+                        <div class="relative inline-block px-6 py-3 rounded-lg cursor-pointer bg-color-secondary">
+                            <p class="text-6xl">2</p>
+                        </div>
+
+                        <h4 class="py-4 text-xl font-bold">Login</h4>
+                        <p class="leading-relaxed">To keep your private diary and notebook in the cloud, features clean, simple and elegant.</p>
+                    
+                    </div>
+
+                    <!--card 3-->
+                    <div class="max-w-sm text-center cursor-pointer">
+                        <div class="relative inline-block px-6 py-3 duration-200 ease-in rounded-lg cursor-pointer bg-color-primary-dark hover:bg-color-secondary">
+                            <p class="text-6xl">3</p>
+                        </div>
+
+                        <h4 class="py-4 text-xl font-bold">Enjoy The Features</h4>
+                        <p class="leading-relaxed">Count the blessings in your life with Journey's Gratitude Template.</p>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        //mobile menu
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu');
+        const hLink = document.querySelector('#hLink');
+        const fasolid = document.querySelector(".fa-solid");
+
+        hamburger.addEventListener("click",()=> {
+            menu.classList.toggle('hidden');
+            fasolid.classList.toggle('fa-xmark')
+        })
+
+        hLink.forEach(link => {
+            link.addEventListener("click", ()=>{
+                menu.classList.toggle('hidden');
+                fasolid.classList.toggle('fa-xmark')  
+            })            
+        });
+    </script>
+</body>
+</html>
