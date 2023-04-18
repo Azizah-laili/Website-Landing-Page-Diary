@@ -1,4 +1,18 @@
 /** @type {import('tailwindcss').Config} */
+
+/*Pricing*/const plugin = require('tailwindcss/plugin');
+
+const rotateY = plugin(function ({ addUtilities }){
+  addUtilities({
+    '.rotate-y-180': {
+      transform: "rotateY(180deg)"
+    },
+    '.-rotate-y-180':{
+      transform :"rotateY(-180deg)"
+    }
+  })
+})
+
 module.exports = {
   content: [
     './components/**/*.{html,js}',
@@ -8,12 +22,13 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        "color-primary" :"#01051e",
-        "color-primary-light" :"#020726",
-        "color-primary-dark" :"#010417",
-        "color-secondary" :"#FF7d3b",
+        "color-primary" :"#fff",
+        "color-primary-light" :"#cadbe7",
+        "color-primary-dark" :"#1b4769",
+        "color-secondary" :"#E8B867",
+        "color-third" :"#053B47",
         "color-gray" :"#333",
-        "color-white" :"#FFF",
+        "color-text" :"#5e9299",
         "color-blob" :"#A427DF",
       }
     },
@@ -25,6 +40,6 @@ module.exports = {
       }
     }
   },
-  plugins: [],
+  plugins: [rotateY],
 }
 
